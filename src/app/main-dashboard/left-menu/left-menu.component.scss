@@ -1,0 +1,144 @@
+$menu-background: #dddd;
+$menu-border: #BEBEBE;
+$menu-color: #818589;
+
+.left-side-menu {
+    float: left;
+    width: 100%;
+    padding: 20px;
+    background-color: $menu-background;
+}
+
+.top-section{
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid;
+    border-color: $menu-border;
+}
+
+.bank-icon {
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+span.hexagon-icon {
+    position: relative;
+    bottom: 2px;
+    margin-right: 5px;
+}
+
+span.hexagon-icon img {
+    width: 20px;
+}
+
+span.bank-name {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+span.icon-right {
+    float: right;
+    font-weight: 700;
+}
+
+.user-icon {
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+span.user-img {
+    position: relative;
+    bottom: 2px;
+    margin-right: 5px;
+}
+
+span.user-img img {
+    width: 20px;
+}
+
+span.user-name {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+span.icon-right img {
+    width: 13px;
+}
+
+.menu-section {
+    float: left;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid;
+    border-color: $menu-border;
+}
+
+p.menu-title {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: $menu-color;
+    margin-bottom: 0px;
+}
+
+ul.menu-list {
+    padding-left: 10px;
+    margin-bottom: 0px;
+}
+
+ul.menu-list li {
+    list-style: none;
+    color: $menu-color;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+ul.menu-list li:hover {
+    color: #000;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+span.menu-icon {
+    margin-right: 10px;
+}
+
+.bottom-section {
+    float: left;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 0px;
+}
+
+.box {
+    height: 150px;
+    width: 100%;
+    border-style: dashed;
+    border-color: #818589;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-content {
+    height: 100%;
+    text-align: center;
+    padding-top: 38px;
+    padding-bottom: 38px;
+}
+
+span.icon-plus {
+    font-size: 30px;
+}
+
+.box-content p {
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}

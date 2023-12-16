@@ -1,0 +1,140 @@
+$sub-text-color: #818589;
+$section-border: #ddd;
+
+.card-section{
+    float: left;
+    width: -webkit-fill-available;
+    margin: 10px 15px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.card-list {
+    float: left;
+    width: 100%;
+}
+
+p.text {
+    float: left;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+span.sub-text {
+    font-size: 9px;
+    font-weight: normal;
+    color: $sub-text-color;
+}
+
+.icon-section {
+    float: right;
+    display: inline;
+}
+
+ul.icon-list {
+    display: inline;
+    padding-left: 0px;
+}
+
+ul.icon-list li {
+    display: inline;
+    list-style: none;
+    padding-left: 6px;
+    padding-right: 0px;
+}
+
+span.select-icon {
+    padding: 2px 5px;
+    border: 1px solid;
+    border-color: $section-border;
+    border-radius: 6px;
+}
+
+.card-img {
+    float: left;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.card-img img {
+    width: 100%;
+}
+
+.add-section {
+    float: left;
+    width: 100%;
+    padding-bottom: 15px;
+    border-bottom: 1px solid;
+    border-color: $section-border;
+}
+
+.box {
+    width: 100%;
+    border-style: dashed;
+    border-color: #818589;
+    border-radius: 5px;
+}
+
+.box-content {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+span.box-text {
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    margin-left: 7px;
+}
+
+.card-actions {
+    float: left;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.action-section {
+    float: left;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid;
+    border-color: #ddd;
+    border-radius: 8px;
+    margin-top: 10px;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.line {
+    border: 1px solid;
+    border-color: #ddd;
+}
+
+.top-up {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.transfer {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.withdrawal {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+p.action-name {
+    font-size: 8px;
+    margin-bottom: 0px;
+}
