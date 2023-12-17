@@ -21,11 +21,10 @@ export class MoneyStaticticsComponent {
   }
 
   createChart(){
-  
     this.chart = new Chart("MyChart", {
-      type: 'bar', //this denotes tha type of chart
+      type: 'bar',
 
-      data: {// values on X-Axis
+      data: {
         labels: ['Jan', 'Feb', 'Mar','Apr', 'May', 'Jun', 'Jul','Aug', 'Sep', 'Oct', 'Nov', 'Dec' ], 
 	       datasets: [
           {

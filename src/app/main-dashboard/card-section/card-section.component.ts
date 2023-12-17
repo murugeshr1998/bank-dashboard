@@ -11,25 +11,25 @@ export class CardSectionComponent {
       product: 'New Watch',
       amount: 2000,
       saving: 1000,
-      icon: 'fa fa-clock-o',
+      icon: 'fa fa-clock-o'
     },
     {
       product: 'Play Station 5',
       amount: 2000,
       saving: 1500,
-      icon: 'fab fa-playstation',
+      icon: 'fab fa-playstation'
     },
     {
       product: 'Mobile',
       amount: 20000,
       saving: 12000,
-      icon: 'fa fa-mobile-phone',
+      icon: 'fa fa-mobile-phone'
     },
     {
       product: 'Laptop',
       amount: 40000,
       saving: 17000,
-      icon: 'fa fa-laptop',
+      icon: 'fa fa-laptop'
     }
   ]
 }
