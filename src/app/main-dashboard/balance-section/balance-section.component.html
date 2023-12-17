@@ -1,0 +1,29 @@
+<div class="balance-section">
+    <div class="title">
+        <p class="text">Total Balance</p>
+        <span class="icon-right">
+            <i class="fa fa-ellipsis-h"></i>
+        </span>
+    </div>
+    <div class="amount">
+        <p>{{balanceData.total_balance | currency}}</p>
+    </div>
+    <div class="progress-bar-view">
+        <div class="progress-section">
+            <progress id="file" value="{{balanceData.payment_done_percentage}}" max="100"></progress>
+        </div>
+        <div class="text-section">
+            <div class="content">
+                <p>Monthly payment limit</p>
+            </div>
+            <div class="limit">
+                <p>
+                    {{balanceData.payment_done_so_far | currency : 'USD' : 'symbol' : '1.0-0'}}
+                    <span class="sub-text">
+                        /{{balanceData.monthly_payment_limit | currency : 'USD' : 'symbol' : '1.0-0'}}
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

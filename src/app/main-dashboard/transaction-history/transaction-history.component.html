@@ -1,0 +1,73 @@
+<div class="transaction-section">
+    <div class="title">
+        <p class="text">Transaction History</p>
+        <div class="right-section">
+            <ul class="section-list">
+                <li>
+                    <span class="menu-icon">
+                        <span class="search-icon"><i class="fa fa-search"></i></span>
+                        <span class="menu-text">
+                            <input type="text" placeholder="Search ..." name="search">
+                        </span>
+                    </span>
+                </li>
+                <li>
+                    <span class="menu-icon">
+                        <span class="icon"><i class="fa fa-filter"></i></span>
+                        <span class="menu-text">Filter</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="menu-icon">
+                        <span class="icon"><i class='fas fa-file-export'></i></span>
+                        <span class="menu-text">Export</span>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="table-view">
+        <table class="table pd-b-5" >
+            <thead>
+                <tr>
+                    <th class="table-head">Date <span class="table-icon"><i class='fas fa-arrows-alt-v'></i></span></th>
+                    <th class="table-head">Name <span class="table-icon"><i class='fas fa-arrows-alt-v'></i></span></th>
+                    <th class="table-head">Status <span class="table-icon"><i class='fas fa-arrows-alt-v'></i></span></th>
+                    <th class="table-head">Type <span class="table-icon"><i class='fas fa-arrows-alt-v'></i></span></th>
+                    <th class="table-head">Time <span class="table-icon"><i class='fas fa-arrows-alt-v'></i></span></th>
+                    <th class="table-head">Amount <span class="table-icon"><i class='fas fa-arrows-alt-v'></i></span></th>
+                    <th class="table-head">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let transactionsitem of transactions;let i =index">
+                <ng-container *ngIf="i <= 5">
+                    <td class="field-value">{{transactionsitem.date | date :'MMM d, y'}}</td>
+                    <td class="field-value">{{transactionsitem.name}}</td>
+                    <ng-container *ngIf="transactionsitem.status == 'Success'">
+                        <td class="field-value" id="green">{{transactionsitem.status}}</td>
+                    </ng-container>
+                    <ng-container *ngIf="transactionsitem.status == 'Pending'">
+                        <td class="field-value" id="yellow">{{transactionsitem.status}}</td>
+                    </ng-container>
+                    <ng-container *ngIf="transactionsitem.status == 'Failed'">
+                        <td class="field-value" id="red">{{transactionsitem.status}}</td>
+                    </ng-container>
+                    <td class="field-value" id="sub-color">{{transactionsitem.type}}</td>
+                    <td class="field-value" id="sub-color">{{transactionsitem.date | date :'hh:mm a'}}</td>
+                    <td class="field-value">{{transactionsitem.amount | currency}}</td>
+                    <td><span class="icon-value"><i class="fa fa-ellipsis-h" (click)="showData(transactionsitem.id)"></i></span></td>
+                </ng-container>
+            </tr>
+        </table>
+    </div>
+    <div class="overlay" *ngIf="popup">
+        <div class="popup">
+            <a class="close" (click)="popup = false">&times;</a>
+            <div class="content">
+                <p>Name : {{selectedData.name}}</p>
+                <p>Type : {{selectedData.type}}</p>
+            </div>
+        </div>
+    </div>
+</div>

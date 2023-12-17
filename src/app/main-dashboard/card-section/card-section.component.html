@@ -37,9 +37,50 @@
             </div>
             <div class="line"></div>
             <div class="withdrawal">
-                <span class="icon"><i class="fa fa-money"></i></span>
+                <span class="icon">
+                    <i class="fa fa-money"></i>
+                </span>
                 <p class="action-name">Withdrawal</p>
             </div>
+        </div>
+    </div>
+    <div class="saving-section">
+        <p class="text">Saving Plan</p>
+        <span class="icon-right">
+            <i class="fa fa-plus-circle"></i>
+        </span>
+        <div class="save-list">
+            <ng-container *ngFor="let productDetailsitem of productDetails">
+                <div class="list-box">
+                    <div class="product-icon">
+                        <span class="icon-view">
+                            <i class='{{productDetailsitem.icon}}'></i>
+                        </span>
+                    </div>
+                    <div class="product-name">
+                        <p class="name-view">{{productDetailsitem.product}}</p>
+                        <p class="price-view">Target: {{productDetailsitem.amount | currency : 'USD' : 'symbol' : '1.0-0'}}</p>
+                    </div>
+                    <div class="product-option">
+                        <span class="menu-icon">
+                            <i class="fa fa-ellipsis-h"></i>
+                        </span>
+                    </div>
+                    <div class="progress-bar-view">
+                        <div class="text-section">
+                            <div class="amount">
+                                <p>Total: {{productDetailsitem.saving | currency : 'USD' : 'symbol' : '1.0-0'}}</p>
+                            </div>
+                            <div class="percentage">
+                                <p>{{(productDetailsitem.saving / productDetailsitem.amount) * 100}}%</p>
+                            </div>
+                        </div>
+                        <div class="progress-section">
+                            <progress id="file" value="{{productDetailsitem.saving}}" max="{{productDetailsitem.amount}}"></progress>
+                        </div>
+                    </div>
+                </div>
+            </ng-container>
         </div>
     </div>
 </div>

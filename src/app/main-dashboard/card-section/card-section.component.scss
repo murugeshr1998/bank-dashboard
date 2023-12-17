@@ -4,7 +4,6 @@ $section-border: #ddd;
 .card-section{
     float: left;
     width: -webkit-fill-available;
-    margin: 10px 15px;
     padding: 15px;
     background-color: #fff;
     border-radius: 10px;
@@ -96,6 +95,8 @@ span.box-text {
     width: 100%;
     padding-top: 15px;
     padding-bottom: 15px;
+    border-bottom: 1px solid;
+    border-color: $section-border;
 }
 
 .action-section {
@@ -137,4 +138,123 @@ span.box-text {
 p.action-name {
     font-size: 8px;
     margin-bottom: 0px;
+}
+
+.saving-section {
+    float: left;
+    width: 100%;
+    padding-top: 15px;
+}
+
+span.icon-right {
+    float: right;
+}
+
+.save-list {
+    float: left;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.list-box {
+    height: 80px;
+    width: 100%;
+    border: 1px solid;
+    border-color: $section-border;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.product-icon {
+    float: left;
+    padding: 5px 10px;
+}
+
+span.icon-view {
+    float: left;
+    padding: 5px 8px;
+    border: 1px solid;
+    border-color: #ddd;
+    border-radius: 6px;
+}
+
+.product-name {
+    float: left;
+    padding: 5px 10px;
+}
+
+p.name-view {
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+p.price-view {
+    font-size: 10px;
+    margin-bottom: 0px;
+    color: $sub-text-color;
+}
+
+.product-option {
+    float: right;
+    padding: 10px;
+}
+
+span.menu-icon {
+    padding: 5px 8px;
+}
+
+.progress-bar-view {
+    float: left;
+    width: 100%;
+    padding: 0px 10px;
+}
+
+.text-section {
+    float: left;
+    width: 100%;
+}
+
+.amount {
+    float: left;
+}
+
+.amount p {
+    font-size: 8px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.percentage {
+    float: right;
+}
+
+.percentage p {
+    margin-bottom: 0px;
+    font-size: 8px;
+    color: $sub-text-color;
+}
+
+.progress-section {
+    float: left;
+    width: 100%;
+    position: relative;
+    bottom: 8px;
+}
+
+progress {
+    width: 100%;
+    height: 6px;
+    border: none;
+    border-radius: 10px;
+}
+
+progress::-webkit-progress-bar {
+    background: #ddd;
+    border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+    background: #000;
+    border-radius: 10px;
 }

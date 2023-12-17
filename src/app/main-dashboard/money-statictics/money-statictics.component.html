@@ -1,0 +1,60 @@
+<div class="money-section">
+    <div class="title">
+        <p class="text">Money Statictics</p>
+        <div class="right-section">
+            <ul class="section-list">
+                <li>
+                    <span class="menu-icon">
+                        <span class="filter-text">Monthly</span>
+                        <i class="fa fa-angle-down"></i>
+                    </span>
+                </li>
+                <li>
+                    <span class="dot-icon">
+                        <i class="fa fa-ellipsis-h"></i>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="stats-view">
+        <div class="stats-section">
+            <div class="income">
+                <p class="section-title">Total Income</p>
+                <p class="balance">{{moneyStats.total_income.value  | currency}}</p>
+                <p class="sub-text">
+                    <span [class]="moneyStats.total_income.trend_color">
+                        <i class="fa fa-line-chart"></i>
+                        +{{moneyStats.total_income.trend}}%
+                    </span> 
+                    from last month
+                </p>
+            </div>
+            <div class="expense">
+                <p class="section-title">Total Expense</p>
+                <p class="balance">{{moneyStats.total_expense.value  | currency}}</p>
+                <p class="sub-text">
+                    <span [class]="moneyStats.total_expense.trend_color">
+                        <i class="fa fa-line-chart"></i>
+                        +{{moneyStats.total_expense.trend}}%
+                    </span> 
+                    from last month
+                </p>
+            </div>
+            <div class="investment">
+                <p class="section-title">Total Investment</p>
+                <p class="balance">{{moneyStats.total_investment.value  | currency}}</p>
+                <p class="sub-text">
+                    <span [class]="moneyStats.total_investment.trend_color">
+                        <i class="fa fa-line-chart"></i>
+                        +{{moneyStats.total_investment.trend}}%
+                    </span> 
+                    from last month
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="chart-container">
+        <canvas  id="MyChart" >{{ chart }}</canvas>
+    </div>
+</div>

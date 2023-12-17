@@ -1,0 +1,96 @@
+$sub-text-color: #818589;
+
+.balance-section{
+    float: left;
+    width: -webkit-fill-available;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.title{
+    float: left;
+    width: 100%;
+}
+
+p.text {
+    float: left;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+span.icon-right {
+    float: right;
+}
+
+.amount {
+    float: left;
+    width: 100%;
+}
+
+.amount p {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.progress-bar-view {
+    float: left;
+    width: 100%;
+    height: 30px;
+}
+
+.progress-section {
+    float: left;
+    width: 100%;
+    position: relative;
+    bottom: 8px;
+}
+
+progress {
+    width: 100%;
+    height: 6px;
+    border: none;
+    border-radius: 10px;
+}
+
+progress::-webkit-progress-bar {
+    background: #ddd;
+    border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+    background: #000;
+    border-radius: 10px;
+}
+
+.text-section {
+    float: left;
+    width: 100%;
+    position: relative;
+    bottom: 10px;
+}
+
+.content {
+    float: left;
+}
+
+.content p {
+    font-size: 10px;
+    color: $sub-text-color;
+}
+
+.limit {
+    float: right;
+}
+
+.limit p {
+    font-size: 10px;
+    margin-bottom: 0px;
+    font-weight: 700;
+}
+
+span.sub-text {
+    color: $sub-text-color;
+}

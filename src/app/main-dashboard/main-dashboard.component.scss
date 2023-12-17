@@ -1,0 +1,51 @@
+$page-background: #E8E8E8;
+
+.view-dashboard {
+    float: left;
+    width: 100%;
+    background-color: $page-background;
+    padding: 10px;
+}
+
+.left-menu {
+    width: 25%;
+    position: sticky;
+    top: 0;
+}
+
+.top-menu {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
+}
+
+.card-main {
+    float: left;
+    width: 25%;
+    padding-top: 10px;
+    padding-right: 5px;
+}
+
+.balance-main {
+    float: right;
+    width: 50%;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+
+.stats-main {
+    float: right;
+    width: 50%;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.transaction-main {
+    float: right;
+    width: 50%;
+    padding-top: 5px;
+    padding-left: 5px;
+}

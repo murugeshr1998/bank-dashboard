@@ -1,0 +1,116 @@
+$sub-text-color: #818589;
+$section-border: #ddd;
+
+.money-section{
+    float: left;
+    width: -webkit-fill-available;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.title{
+    float: left;
+    width: 100%;
+}
+
+p.text {
+    float: left;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.right-section {
+    display: inline;
+    float: right;
+}
+
+ul.section-list {
+    display: inline;
+    padding-left: 0px;
+}
+
+ul.section-list li {
+    display: inline;
+    list-style: none;
+    padding-left: 10px;
+    padding-right: 0px;
+}
+
+span.menu-icon {
+    padding: 5px 6px;
+    border: 1px solid;
+    border-color: #ddd;
+    border-radius: 6px;
+}
+
+span.filter-text {
+    font-size: 10px;
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+.stats-view {
+    float: left;
+    width: 100%;
+    margin-top: 15px 
+}
+
+.stats-section {
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.income {
+    width: 33.33%;
+    text-align: left;
+}
+
+.expense {
+    width: 33.33%;
+    text-align: left;
+}
+
+.investment {
+    width: 33.33%;
+    text-align: left;
+}
+
+p.section-title {
+    font-size: 10px;
+    color: $sub-text-color;
+    margin-bottom: 0px;
+}
+
+p.balance {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+p.sub-text {
+    font-size: 8px;
+    color: $sub-text-color;
+    margin-bottom: 0px;
+}
+
+span.red {
+    color: #CC5500;
+    font-weight: 700;
+}
+
+span.green {
+    color: #90EE90;
+    font-weight: 700;
+}
+
+span.yellow {
+    color: #FFD700;
+    font-weight: 700;
+}

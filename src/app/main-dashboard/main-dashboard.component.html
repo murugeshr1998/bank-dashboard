@@ -1,16 +1,22 @@
 <div class="container">
-    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 paddingless">
-        <div class="col-md-3 col-lg-3 col-sm-12 col-xs-12 paddingless" style="float: left;background-color: #dddd;">
+    <div class="view-dashboard">
+        <div class="left-menu">
             <app-left-menu></app-left-menu>
         </div>
-        <div class="col-md-9 col-lg-9 col-sm-12 col-xs-12" style="float: left;background-color: #dddd;">
+        <div class="top-menu">
             <app-top-menu></app-top-menu>
         </div>
-        <div class="col-md-3 col-lg-3 col-sm-12 col-xs-12 paddingless" style="float: left;background-color: #dddd;">
+        <div class="card-main">
             <app-card-section></app-card-section>
         </div>
-        <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
-            <router-outlet></router-outlet>
+        <div class="balance-main">
+            <app-balance-section></app-balance-section>
+        </div>
+        <div class="stats-main">
+            <app-money-statictics></app-money-statictics>
+        </div>
+        <div class="transaction-main">
+            <app-transaction-history></app-transaction-history>
         </div>
     </div>
 </div>
